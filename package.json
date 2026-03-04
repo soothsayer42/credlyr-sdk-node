@@ -1,5 +1,5 @@
 {
-  "name": "@credlyr/sdk",
+  "name": "credlyr",
   "version": "1.0.0",
   "description": "Official Node.js SDK for the Credlyr API",
   "main": "dist/index.js",
@@ -18,7 +18,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/credlyr/sdk-node.git"
+    "url": "https://github.com/soothsayer42/credlyr-sdk-node.git"
   },
   "devDependencies": {
     "@types/node": "^20.10.0",
