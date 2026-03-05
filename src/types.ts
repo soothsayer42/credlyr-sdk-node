@@ -18,7 +18,17 @@ export interface Verification {
   id: string;
   status: VerificationStatus;
   requested_claims: string[];
+  /**
+   * Full claim values (sandbox environment only).
+   * In production, use `verified_claims` instead.
+   */
   output_claims?: Record<string, unknown>;
+  /**
+   * List of claim names that were verified (production environment).
+   * Actual values are masked for PII protection.
+   * In sandbox, use `output_claims` for full values.
+   */
+  verified_claims?: string[];
   hosted_url: string;
   metadata?: Record<string, unknown>;
   created_at: string;
